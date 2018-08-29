@@ -32,3 +32,5 @@ for j in xrange(60000):
 
     l2_error = y - l2
 
+    if (j%10000) == 0:
+        print "Error: " + str(np.mean(np.abs(l2_error)))
