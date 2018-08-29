@@ -45,3 +45,5 @@ for j in xrange(60000):
     syn1 += l1.T.dot(l2_delta)
     syn0 += l0.T.dot(l1_delta)
 
+print "Output after training"
+print l2
