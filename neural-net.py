@@ -24,3 +24,8 @@ np.random.seed(1)
 syn0 = 2 * np.random.random((3,4)) - 1
 syn1 = 2 * np.random.random((4,1)) - 1
 
+# Training Step
+for j in xrange(60000):
+    l0 = X
+    l1 = nonlin(np.dot(l0, syn0))
+    l2 = nonlin(np.dot(l1, syn1))
