@@ -18,3 +18,5 @@ y = np.array([[0],
             [1],
             [0]])
 
+np.random.seed(1)
+
