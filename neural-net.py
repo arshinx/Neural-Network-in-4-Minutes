@@ -20,3 +20,7 @@ y = np.array([[0],
 
 np.random.seed(1)
 
+# Synapses
+syn0 = 2 * np.random.random((3,4)) - 1
+syn1 = 2 * np.random.random((4,1)) - 1
+
