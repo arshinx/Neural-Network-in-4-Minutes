@@ -34,3 +34,5 @@ for j in xrange(60000):
 
     if (j%10000) == 0:
         print "Error: " + str(np.mean(np.abs(l2_error)))
+
+    l2_delta = l2_error * nonlin(l2, deriv=True)
