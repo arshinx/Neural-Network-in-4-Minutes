@@ -40,3 +40,8 @@ for j in xrange(60000):
     l1_error = l2_delta.dot(syn1.T)
 
     l1_delta = l1_error * nonlin(l1, deriv = True)
+
+    # Update Synapse Weights
+    syn1 += l1.T.dot(l2_delta)
+    syn0 += l0.T.dot(l1_delta)
+
